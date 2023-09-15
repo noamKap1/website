@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Noam Kaplinski</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Enable popovers everywhere
+            $('[data-bs-toggle="popover"]').popover();  
+        });
+        </script>
+</head>
+<body>
+    <div id="leftwall">
+        <img id="logo" src="nhksdcircle.png" alt="profile picture">
+        <div class="btn-group-vertical" id="movelogos">
+            <a href="mailto:noamnhksd@email.com" target="_blank">
+                <button type="button" class="btn btn-primary" id="gmail" data-bs-container="body">
+                    <i class="fas fa-envelope"></i>
+                  </button>
+              </a>
+
+              <button type="button" class="btn btn-primary" id="phone" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="+972 50-657-7517">
+                <i class="fas fa-phone"></i> 
+              </button>
+        </div>
+        <button id="showContentButton">
+            <div id="arrow" class="more">For more <br> about me</div>
+        </button>
+        <!-- <div id="more">For more <br> about me</div> -->
+    </div>
+
+
+    <img id="picture" src="circlepic.jpeg" alt="profile picture">
+
+
+    <div id="about">
+        <!-- <p>HELLO THERE! I'M</p> -->
+        <h1 id="name">Noam Kaplinski</h1>
+        <p>
+            A
+            <span id="paintblue">
+                Computer Scinece and Mathematics student
+            </span>
+            passionate about <br>
+            creating interactive applications and expreinces on the web.
+        </p>
+    </div>
+
+
+    <div>
+        <div class="btn-toolbar" role="toolbar" id="buttons" aria-label="Toolbar with button groups">
+            <div class="btn-group me-2" role="group" aria-label="First group">
+                <button type="button" class="custom-button" id="resume-button">
+                    <i class="fas fa-download"></i> Download Resume
+                </button>
+                <script>
+                    document.getElementById('resume-button').addEventListener('click', function () {
+                        var resumeLink = document.createElement('a');
+                        resumeLink.href = './Noam Kaplinski C.V.docx'; // Replace with the correct file path
+                        resumeLink.download = 'Noam Kaplinski C.V.docx'; // Specify the download filename
+                        resumeLink.style.display = 'none';
+                        document.body.appendChild(resumeLink);
+                        resumeLink.click();
+                        document.body.removeChild(resumeLink);
+                    });
+                </script> 
+            </div>
+              <div class="btn-group me-2" role="group" aria-label="Second group">
+                <a href="https://www.linkedin.com/in/noamkaplinski/" target="_blank">
+                    <button class="btn btn-primary" id="linkedin-button">
+                      <i class="fab fa-linkedin"></i> LinkedIn
+                    </button>
+                  </a>
+              </div>
+              <div class="btn-group" role="group" aria-label="Third group">
+                <a href="https://github.com/noamKap1" target="_blank">
+                    <button class="btn btn-secondary" id="github-button">
+                      <i class="fab fa-github"></i> GitHub
+                    </button>
+                  </a>
+            </div>
+
+    </div>
+
+    <!-- <button id="showContentButton">
+        <img id="arrow" src="downarrow.png" alt="Button Image">
+    </button> -->
+    <div id="hiddenContent" class="hidden">
+        <!-- Your content goes here -->
+        <!-- <p id="pushdown"></p> -->
+        <!-- <p>This is the hidden content that will glide down when revealed.</p> -->
+        <div id="leftwall2">
+            <div class="btn-group-vertical" id="movelogos2">
+                <a href="mailto:noamnhksd@email.com" id="movemail" target="_blank">
+                    <button type="button" class="btn btn-primary" id="gmail2" data-bs-container="body">
+                        <i class="fas fa-envelope"></i>
+                      </button>
+                  </a>
+    
+                  <button type="button" class="btn btn-primary" id="phone2" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="+972 50-657-7517">
+                    <i class="fas fa-phone" id="movephone"></i> 
+                  </button>
+            </div>
+            <img id="logo2" src="nhksdcircle.png" alt="profile picture">
+        </div>
+        <div class="row">
+            <div class="column">
+                <h2>About myself</h2>
+                <p class="makebig">My hobbies include traveling, working out, and computer programming for fun.</p>
+                <p class="makebig">I am waiting patiantly for my army service after my graduation</p>
+                <p class="makebig">I love exploring new places and improve my coding skills and professional knowledge</p>
+                <p class="makebig">I love music and enjoy playing the piano as well</p>
+                <p class="makebig">I love watching and playing sports especially football</p>
+                <!-- <img id="logo3" src="friends.jpg" alt="friends picture"> -->
+            </div>
+            <!-- <div class="column">
+                <h2>Me & My Family</h2>
+                <p class="makebig">My full name is Noam Herzel Kaplinski </p>
+                <p class="makebig">I am 18 years old, I was born on 25.05.2005 in Israel</p>
+                <p class="makebig">I have 2 brothers named Eyal and Eytan, sister named Talia, mother named Didi, father named Sharon and a beautiful dog named Bobe</p>
+                <p class="makebig">We currently live in Kiryat Ono, Israel</p>
+
+                <img id="logo2" class="trying" src="family.png" alt="family picture">
+            </div> -->
+            <div class="column">
+                <h2>Bar-Ilan University</h2>
+                <p class="makebig">I'm currently studing for my Bachler of Science in Computer science and Mathematics</p>
+                <p class="makebig">I'm strating my third and final year as a student in a Bar-Ilan in special double major program In computer science and mathematics</p>
+                <p class="makebig">I began my studies in July 2021 and will finish them in August 2024</p>
+                <p class="makebig">My current GPA is 89</p>
+
+
+                <img id="logo" src="logo-bar-ilan-university.png" alt="bar ilan picture">
+            </div>
+            <div class="column">
+                <!-- High School Graduate with social and academic honors, I expanded my studies in physics, computer science and software engineering. -->
+                <h2>Ben-Zvi High School</h2>
+                <p class="makebig">I'm a High School Graduate from Ben-Zvi High School <br> Studied there from 2020-2023</p>
+                <p class="makebig">I Graduated with social and academic honors</p>
+                <p class="makebig">I expended my studies in physics,<br>computer science and software engineering</p>
+                <p class="makebig">Studied in a speical software engineering class</p>
+                <p class="makebig">My final GPA is 117.5</p>
+
+
+
+                <img id="logo" src="BENZVI_ONO_LOGO.png" alt="ben zvi picture">
+                <p></p>
+            </div>
+        </div>
+        <p></p>
+    </div>
+
+
+    <script src="index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+</body>
+</html>

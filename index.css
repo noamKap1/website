@@ -1,0 +1,228 @@
+html{
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0 !important;
+  height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0 !important;
+    height: 100%;
+    overflow-y: hidden;
+}
+#hiddenContent{
+display: block ;
+opacity: 1;
+}
+#logo {
+    max-width: 80%; 
+    margin: 10%;
+    height: auto; 
+}
+#logo2 {
+  max-width: 80%; 
+  margin-top: 270%;
+}
+
+#logo3 {
+  max-width: 100%; 
+  height: auto; 
+}
+#leftwall{
+    height: 100%;
+    width: 120px; 
+    background-color: #AEDFF7; 
+    float: left; 
+  }
+  #leftwall2{
+    margin: 0;
+    padding: 0;
+    margin-right: 15px;
+    bottom: 0px;
+    height: 913px;
+    
+    width: 120px; 
+    background-color: #AEDFF7; 
+    float: left; 
+  }
+#picture{
+    float: right; 
+    margin-right: 50%;
+    margin-top: 15%;
+  }
+#about{
+    clear: right; 
+    margin-right: 20%; 
+    margin-top: -15%;
+    float: right;
+  }
+#paintblue{
+    color: blue;
+  }
+
+#linkedin-button {
+    background-color: #0077B5; 
+    color: white;
+  }
+  
+  #github-button {
+    background-color: #333; 
+    color: white;
+  }
+  #buttons {
+    clear: right;
+    margin-top: -5%; 
+    margin-right: calc(20% + 72.43px);
+    float: right;
+}
+.custom-button {
+    background-color: #0077B5; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #005d96; 
+}
+#phone{
+  margin-top: 40%;
+  background-color: #AEDFF7;
+  border-color: #AEDFF7;
+  font-size: 2rem;
+
+}
+
+#gmail{
+  background-color: #AEDFF7;
+  border-color: #AEDFF7;
+  margin-top: 0%;
+  font-size: 2rem;
+  box-shadow: #AEDFF7 !important;
+  border-color: #AEDFF7 !important;
+
+}
+#movephone{
+  margin-right: 22px;
+}
+#movemail{
+  margin-left: 14px;
+}
+#phone2{
+  margin-top: 40%;
+  background-color: #AEDFF7;
+  border-color: #AEDFF7;
+  font-size: 2rem;
+  margin-right: 22px;
+
+}
+
+#gmail2{
+  background-color: #AEDFF7;
+  border-color: #AEDFF7;
+  margin-top: 0%;
+  margin-right: 0px;
+
+  font-size: 2rem;
+  box-shadow: #AEDFF7 !important;
+  border-color: #AEDFF7 !important;
+
+}
+#movelogos{
+  margin-top: 220%;
+  margin-left: 25%;
+}
+#movelogos2{
+  margin-top: 240%;
+  margin-left: 15%;
+}
+.more{
+  text-align: center; 
+  padding: 10px; 
+  font-weight: bold; 
+  font-size: 15px; 
+  border: 2px solid #333; 
+  border-radius: 9px; 
+  bottom: 10px;
+}
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+    box-shadow: none !important;
+}
+.hidden {
+  display:block;
+  position: absolute;
+  padding-left: 0px !important;
+  top: 963px;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+  transform: translateY(-20px);
+  padding-top: 0px !important;
+}
+
+#showContentButton {
+  margin-top: 222%;
+  margin-left: -1.5%;
+  clear: left;
+  float: left;
+  border: none;
+  padding: 0;
+  background: none;
+  transform: translateX(-50%);
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+}
+#showContentButton img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover; 
+}
+.row {
+
+  margin-top: 50px !important;
+  float: inline-start;
+  justify-content: space-between;
+}
+
+.column {
+  flex-basis: calc(30% - 10px); 
+  box-sizing: border-box; 
+  padding: 30px; 
+  margin: 30px;
+  border: 2px solid #333; 
+}
+#logo.trying  {
+  height: 30%;
+  width: auto;
+}
+.makebig{
+  font-size: larger;
+  padding: 5px;
+}
+.movedown{
+  margin-top: 20%;
+}
+.movedown2{
+  margin-top: 5%;
+}
+.movedown3{
+  margin-top: 8%;
+}
+
+
+
+
